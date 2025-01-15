@@ -1,0 +1,407 @@
+/**
+Cascading Style Sheet for Portfolio Home Page
+*/
+
+/**Style rules for the body, html tags*/
+
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    overflow-x:hidden;
+    box-sizing:border-box;
+}
+
+/**Style Rules for the Header TAGS*/
+header{
+    background-color: #35254e;
+    left:0;
+    top:0;
+    display:block;
+    position: fixed;
+    width: 100%;
+    color: white;
+    padding: 10px 20px;
+    z-index: 1000;
+
+}
+
+.head-line, .name{
+    text-align: center;
+}
+
+
+/**Style Rules for the navigation bar buttons*/
+.menu-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:inherit;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.menu-buttons button{
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    color:white;
+    cursor: pointer;
+
+}
+.menu-buttons button:hover{
+    background-color: #dfdaeb;
+    color:black;
+    transition: background-color 0.5s;
+    border-radius: 4px;
+}
+.current-page{
+    background-color: #dfdaeb;
+    color:black;
+    transition: background-color 0.5s;
+    border-radius: 4px;
+}
+
+/**Styles for the Footer section of the webpage*/
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #35254e;
+    left:0;
+    top:0;
+    width: 100%;
+    color: white;
+    padding: 10px 20px;
+
+}
+#social-link-icons{
+    display: grid;
+    gap: 5px;
+    padding: 10px, 10px;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    padding: 10px;
+    background-color: inherit;
+    /*margin-left: 5%;*/
+    margin-right: 5%;
+}
+
+#contact-details{
+    margin-left: 5%;
+}
+
+#contact-details p a img{
+    height: 20px;
+    width: 20px;
+}
+#social-link-icons a img{
+    height: 20px;
+    width: 20px;
+}
+
+/*Style Rules for the main-body of the home-page*/
+
+main{
+    background-color:#ffffff;
+    color:rgb(0, 0, 0);
+    width:100%;
+    left:0;
+    position: relative;
+    right:0;
+    margin-top:200px
+}
+
+/**Styling the ABOUT section of the */
+#about-drop-down{
+    background-color:#02389b;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    border: solid;
+    border-width: 1px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-left: 1.5%;
+    margin-right:1.5%;
+    display: flex;
+    justify-content: space-between;
+
+}
+#about-drop-down:hover{
+    background-color:rgb(77, 54, 5) ;
+    color:white;
+}
+.profile{
+    height: 70px;
+    width: 70px;
+}
+#about-drop-down p{
+    font-size: 25px;
+    text-align: center;
+    position: relative;
+}
+#about-drop-down img{
+    height: 30px;
+    width: 30px;
+}
+.hidden{
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+}
+
+/*welcome section styling*/
+.welcome{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: inherit;
+    width: 100%;
+}
+.welcome img{
+    width: 160px;
+    height: 150px;
+    position: relative;
+    left: 300px;
+}
+.welcome p{
+    position: relative;
+    right: 60px;
+    width: 55%;
+}
+
+main div p{
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: left;
+}
+
+main h2{
+    position: relative;
+    left: 10px;
+
+}
+
+/**Styling the Missions Statements*/
+
+.mission{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr)); /*ensures that the grid adjust automatically based on screen size*/
+    gap:10px; /*Adds spacing between the items*/
+    padding: 10px;
+    background-color: inherit;
+}
+.mission div img{
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    
+}
+.mission div{
+    padding: 20px;
+    text-align: left;
+    background-color: inherit;
+    color: inherit;
+}
+.mission{
+    padding:  10px 20px;
+}
+
+
+.work-role, main div h4,main div ul,.degree,main div h3,.tech-skills,.soft-skills{
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+
+
+
+.project-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5px;
+    color: rgb(19, 10, 10);
+    background-color: #c5a7ff;
+    position: relative;
+    
+   
+}
+.project-content{
+    position: relative;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: #ffffff;
+    color: black;
+}
+
+.project-header button{
+    background-color: aliceblue;
+    border-radius: 8px;
+}
+
+.technical-skills,.tools{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    gap:10px; /*Adds spacing between the items*/
+    padding: 10px;
+    background-color: inherit;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.technical-skills div, .tools div{
+    padding: 50px;
+    text-align: left;
+    background-color: inherit;
+    color: inherit;
+}
+
+.technical-skills div img, .tools div img{
+    width : 50px;
+    height: 50px;;
+}
+
+
+.schools{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.schools img{
+    width: 70px;
+    height: 70px;
+}
+
+.work-header{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+.work-role{
+    display: flex;
+    align-items: right;
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+.projects{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    gap:100px;
+    padding:100px;
+    background-color: inherit;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.projects div{
+    padding:30px;
+    text-transform: center;
+    background-color: inherit;
+    color:inherit;
+}
+
+.projects div button img, .project-header img{
+    width: 300px;
+    height: 200px;
+    border-radius: 15px;
+}
+.projects div button{
+    border: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: inherit;
+}
+
+.download-button{
+    margin-left: 35%;
+    position: relative;
+    color:white;
+    background-color: rgba(11, 4, 78, 0.945);
+
+}
+
+.project-summary{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0px;
+    color: black;
+    background-color:inherit;
+
+}
+
+
+.heading-section{
+    text-align: center;
+    flex: 1;
+}
+
+.heading-section h2{
+    margin: 0;
+    font-size: 1.5rem;
+    font-family: Snell Roundhand;
+}
+.heading-section h5{
+    margin: 5px 0 0;
+    font-size: 0.9rem;
+    color:#ccc
+}
+
+.menu-icon{
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color:rgb(255, 255, 255);
+    position: relative;
+    right: 20px;
+
+}
+
+#menu-items{
+    list-style: none;
+    margin: 0;
+    padding: 2px;
+    position: absolute;
+    top:50px;
+    right:20px;
+    background-color: #f0dddd;
+    border: 1px solid #725050;
+    border-radius:5px;
+    z-index: 1000;
+
+    /*transition: opacity 0.5s ease, transform 0.3s ease;*/
+
+}
+
+#menu-items li{
+    padding: 10px 20px
+}
+
+#menu-items li a{
+    text-decoration: none;
+    color:rgb(36, 77, 190);
+}
+
+.hidden{
+    display:none;
+}
