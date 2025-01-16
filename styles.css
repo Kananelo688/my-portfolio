@@ -217,7 +217,9 @@ main h2 {
         position: fixed;
         top: 0;
         left: 0;
-        display: block;
+        display: flex;
+        justify-content: space-between;
+        align-items: left;
         width: 100%;
         color: white;
         padding: 10px 20px;
@@ -300,6 +302,25 @@ main h2 {
 
 @media (max-width: 480px) {
     /* For smartphones */
+    header{
+        display: none;
+    }
+    .mobile-menu{
+        background-color: #35254e;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: left;
+        width: 100%;
+        color: white;
+        padding: 10px 20px;
+        z-index: 1000;
+    }
+    .mobile-menu h1{
+        margin-left: 1.5%;
+    }
     .menu-icon{
         background: none;
         border: none;
@@ -308,7 +329,32 @@ main h2 {
         color:rgb(255, 255, 255);
         position: relative;
         margin-right: 1.5%;
+        
     }
+    #menu-items{
+        list-style: none;
+        margin: 0;
+        padding: 2px;
+        position: absolute;
+        top:50px;
+        right:20px;
+        background-color: #f0dddd;
+        border: 1px solid #725050;
+        border-radius:5px;
+        z-index: 1000;
+        /*transition: opacity 0.5s ease, transform 0.3s ease;*/
+    
+    }
+
+    #menu-items li{
+    padding: 10px 20px
+    }
+
+    #menu-items li a{
+    text-decoration: none;
+    color:rgb(36, 77, 190);
+    }
+
 
     body {
         font-size: 12px;
