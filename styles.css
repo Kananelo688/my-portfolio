@@ -303,7 +303,7 @@ main h2 {
         align-items: center;
         width: 100%;
         color: white;
-        padding: 10px 20px;
+        padding: 5px 10px;
         z-index: 1000;
     }
     .menu-icon{
@@ -319,8 +319,8 @@ main h2 {
         list-style: none;
         padding: 2px;
         position: relative;
-        top:50px;
-        margin-right: 5%;
+        top:250px;
+        margin: 0px;
         background-color: #d4e3ff;
         border: 1px solid #0a0a0a;
         border-radius:5px;
@@ -330,7 +330,7 @@ main h2 {
     }
 
     #menu-items li{
-    padding: 10px 20px;
+    padding: 5px 15px;
     }
 
     #menu-items li a{
@@ -339,12 +339,12 @@ main h2 {
     }
 
     body {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .clickable-bar {
         padding: 10px;
-        font-size: 12px;
+        font-size: 8px;
     }
 
     #missions, #visions, #values {
@@ -362,7 +362,7 @@ main h2 {
 
     .profile {
         height: 50px;
-        width: 50;
+        width: 50px;
     }
 }
 
