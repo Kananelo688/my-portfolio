@@ -109,8 +109,8 @@ main {
 /** Section styling */
 .section {
     background-color: #b1c1ee;
-    margin-left: 1.5%;
-    margin-right: 1.5%;
+    margin-left: 3%;
+    margin-right: 3%;
     border: solid;
     border-width: 1px;
     border-radius: 15px;
@@ -219,14 +219,11 @@ main h2 {
         left: 0;
         display: flex;
         justify-content: space-between;
-        align-items: right;
+        align-items: center;
         width: 100%;
         color: white;
         padding: 10px 20px;
         z-index: 1000;
-    }
-    .mobile-menu h1{
-        margin-left: 5%;
     }
     .menu-icon{
         background: none;
@@ -234,19 +231,17 @@ main h2 {
         font-size: 1.5rem;
         cursor: pointer;
         color:rgb(255, 255, 255);
-        position: relative;
-        margin-right: 5%;
-        
+        position: relative;  
     }
+
     #menu-items{
         list-style: none;
-        margin: 0;
         padding: 2px;
-        position: absolute;
+        position: relative;
         top:50px;
         margin-right: 5%;
-        background-color: #f0dddd;
-        border: 1px solid #725050;
+        background-color: #d4e3ff;
+        border: 1px solid #0a0a0a;
         border-radius:5px;
         z-index: 1000;
         /*transition: opacity 0.5s ease, transform 0.3s ease;*/
@@ -266,23 +261,12 @@ main h2 {
         font-size: 14px;
     }
 
-    .menu-buttons {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    header {
-        padding: 10px;
-        font-size: 14px;
-    }
-
     .clickable-bar {
         padding: 10px;
         font-size: 16px;
     }
 
     #missions, #visions, #values {
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
         flex-direction: column;
     }
 
@@ -291,8 +275,8 @@ main h2 {
     }
 
     #missions div img, #visions div img, #values div img {
-        width: 80px;
-        height: 80px;
+        width: 40px;
+        height: 40px;
     }
 
     .profile {
