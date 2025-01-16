@@ -207,7 +207,9 @@ main h2 {
 }
 
 /** Responsive styling for mobile and smaller devices */
-@media (max-width: 768px) {
+@media (max-width: 768px){
+    
+
     /* For tablets and smaller devices */
     header{
         display: none;
@@ -249,7 +251,7 @@ main h2 {
     }
 
     #menu-items li{
-    padding: 10px 20px
+    padding: 10px 20px;
     }
 
     #menu-items li a{
@@ -280,19 +282,16 @@ main h2 {
     }
 
     .profile {
-        height: 60px;
-        width: 60px;
+        height: 40px;
+        width: 40px;
     }
 }
 
 @media (max-width: 480px) {
     /* For smartphones */
-    header{
+     /* For tablets and smaller devices */
+     header{
         display: none;
-    }
-    #missions, #visions, #values {
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-        flex-direction: column;
     }
     .mobile-menu{
         background-color: #35254e;
@@ -301,14 +300,11 @@ main h2 {
         left: 0;
         display: flex;
         justify-content: space-between;
-        align-items: left;
+        align-items: center;
         width: 100%;
         color: white;
         padding: 10px 20px;
         z-index: 1000;
-    }
-    .mobile-menu h1{
-        margin-left: 5%;
     }
     .menu-icon{
         background: none;
@@ -316,19 +312,17 @@ main h2 {
         font-size: 1.5rem;
         cursor: pointer;
         color:rgb(255, 255, 255);
-        position: relative;
-        margin-right: 5%;
-        
+        position: relative;  
     }
+
     #menu-items{
         list-style: none;
-        margin: 0;
         padding: 2px;
-        position: absolute;
+        position: relative;
         top:50px;
-        right:20px;
-        background-color: #f0dddd;
-        border: 1px solid #725050;
+        margin-right: 5%;
+        background-color: #d4e3ff;
+        border: 1px solid #0a0a0a;
         border-radius:5px;
         z-index: 1000;
         /*transition: opacity 0.5s ease, transform 0.3s ease;*/
@@ -336,7 +330,7 @@ main h2 {
     }
 
     #menu-items li{
-    padding: 10px 20px
+    padding: 10px 20px;
     }
 
     #menu-items li a{
@@ -344,37 +338,31 @@ main h2 {
     color:rgb(36, 77, 190);
     }
 
-
     body {
         font-size: 12px;
     }
 
-    .menu-buttons button {
-        font-size: 14px;
-        padding: 8px;
+    .clickable-bar {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    #missions, #visions, #values {
+        flex-direction: column;
     }
 
     .section {
         margin: 5px;
     }
 
-    header {
-        padding: 10px;
-        font-size: 12px;
-    }
-
-    .clickable-bar p {
-        font-size: 14px;
-    }
-
     #missions div img, #visions div img, #values div img {
-        width: 70px;
-        height: 70px;
+        width: 40px;
+        height: 40px;
     }
 
     .profile {
         height: 50px;
-        width: 50px;
+        width: 50;
     }
 }
 
