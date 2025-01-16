@@ -150,6 +150,12 @@ main {
     width: 30px;
 }
 
+#visions-icon, #missions-icon, #values-icon{
+    width:80px;
+    height: 80px;
+    border-radius: inherit;
+}
+
 /** Hidden class for toggling visibility */
 .hidden {
     display: none;
@@ -285,7 +291,10 @@ main h2 {
         width: 50px;
         height: 50px;
     }
-
+    #visions-icon, #missions-icon, #values-icon{
+        width:50px;
+        height: 50px;
+    }
     .profile {
         height: 50px;
         width: 50px;
@@ -303,11 +312,12 @@ main h2 {
         left: 0;
         display: flex;
         justify-content: space-between;
-        align-items: right;
+        align-items: center;
         width: 100%;
         color: white;
         padding: 10px 20px;
         z-index: 1000;
+        flex-wrap: wrap;
     }
 
     #menu-icon{
@@ -318,7 +328,6 @@ main h2 {
             cursor: pointer;
             color:rgb(255, 255, 255);
             position: relative;
-            right: 5px;
     }
 
     #menu-items{
@@ -362,18 +371,23 @@ main h2 {
     .clickable-bar p {
         font-size: 14px;
     }
+    #visions-icon, #missions-icon, #values-icon{
+        width:30px;
+        height: 30px;
+    }
     #missions, #visions, #values {
         flex-direction: column;
         padding: 10px;
     }
 
     #missions div img, #visions div img, #values div img {
-        width:   30px;
-        height:  30px;
+        width:   50px;
+        height:  50px;
     }
-    .profile {
-        height: 40px;
-        width: 40px;
+    .profile
+    {
+        height: 30px;
+        width: 30px;
     }
 
 }
