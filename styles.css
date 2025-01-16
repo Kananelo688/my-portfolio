@@ -305,45 +305,53 @@ main h2 {
     /* For smartphones */
 
     /*Menu Bar for Small Screens(smartphones)*/
-    .mobile-menu{
+    .mobile-menu {
         background-color: #35254e;
         position: fixed;
         top: 0;
         left: 0;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        justify-content: space-between; /* Space between title and menu icon */
+        align-items: center; /* Center vertically */
         width: 100%;
         color: white;
-        padding: 10px 20px;
+        padding: 8px 12px; /* Adjust for smaller screens */
         z-index: 1000;
-        flex-wrap: wrap;
+        box-sizing: border-box; /* Include padding in width */
+        flex-wrap: nowrap; /* Prevent wrapping for small screens */
     }
 
-    #menu-icon{
-
-            background: none;
-            border: none;
-            font-size: 1.5rem;
-            cursor: pointer;
-            color:rgb(255, 255, 255);
-            position: relative;
+    .mobile-menu h1 {
+        font-size: 1.2rem; /* Scaled for mobile */
+        white-space: nowrap; /* Prevent wrapping of title */
+        overflow: hidden; /* Prevent overflow */
+        text-overflow: ellipsis; /* Add ellipsis for long titles */
+        margin: 0;
+        flex-shrink: 1; /* Allow the icon to take its space */
+    }
+    #menu-icon {
+        background: none;
+        border: none;
+        font-size: 1.8rem; /* Adjust size for mobile */
+        color: white;
+        cursor: pointer;
+        margin-left: auto; /* Push to the far right */
+        flex-shrink: 0; /* Prevent the icon from shrinking */
     }
 
-    #menu-items{
+    #menu-items {
+        display: none; /* Hidden initially */
         list-style: none;
         margin: 0;
-        padding: 2px;
+        padding: 0; /* Remove default padding */
         position: absolute;
-        top:50px;
-        right:20px;
+        top: 100%; /* Align directly below menu bar */
+        right: 0; /* Align to the right edge */
         background-color: #bee0ff;
-        border: 1px solid #000000;
-        border-radius:5px;
+        border: 1px solid #000;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         z-index: 1000;
-    
-        /*transition: opacity 0.5s ease, transform 0.3s ease;*/
-    
     }
     
     #menu-items li{
