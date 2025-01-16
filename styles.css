@@ -2,127 +2,120 @@
 Cascading Style Sheet for Portfolio Home Page
 */
 
-/**Style rules for the body, html tags*/
-
-html, body{
+/** Base styles for all screen sizes */
+html, body {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    overflow-x:hidden;
-    box-sizing:border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    overflow-x: hidden;
+    box-sizing: border-box;
 }
 
-/**Style Rules for the Header TAGS*/
-header{
+/** General styles for the header */
+header {
     background-color: #35254e;
-    left:0;
-    top:0;
-    display:block;
     position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
     width: 100%;
     color: white;
     padding: 10px 20px;
     z-index: 1000;
-
 }
 
-.head-line, .name{
+.head-line, .name {
     text-align: center;
 }
 
-
-/**Style Rules for the navigation bar buttons*/
-.menu-buttons{
+/** Mobile-first: Flex layout for menu buttons */
+.menu-buttons {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family:inherit;
+    font-family: inherit;
     flex-wrap: wrap;
     gap: 15px;
 }
 
-.menu-buttons button{
+.menu-buttons button {
     padding: 10px 20px;
     font-size: 16px;
     border: none;
     background-color: transparent;
-    color:white;
+    color: white;
     cursor: pointer;
-
 }
-.menu-buttons button:hover{
+
+.menu-buttons button:hover {
     background-color: #dfdaeb;
-    color:black;
+    color: black;
     transition: background-color 0.5s ease;
     border-radius: 4px;
 }
-.current-page{
+
+.current-page {
     background-color: #dfdaeb;
-    color:black;
+    color: black;
     transition: background-color 0.5s;
     border-radius: 4px;
 }
 
-/**Styles for the Footer section of the webpage*/
-footer{
+/** Footer section styling */
+footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #35254e;
-    left:0;
-    top:0;
     width: 100%;
     color: white;
     padding: 10px 20px;
-
 }
-#social-link-icons{
+
+/* Social link icons grid for footer */
+#social-link-icons {
     display: grid;
     gap: 10px;
-    padding: 10px, 10px;
-    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     padding: 10px;
     background-color: inherit;
-    /*margin-left: 5%;*/
     margin-right: 5%;
 }
 
-#contact-details{
+#contact-details {
     margin-left: 5%;
 }
 
-#contact-details p a img{
+#contact-details p a img, #social-link-icons a img {
     height: 20px;
     width: 20px;
 }
-#social-link-icons a img{
-    height: 20px;
-    width: 20px;
-}
-/*Style Rules for the main-body of the home-page*/
-main{
-    background-color:#ffffff;
-    color:rgb(0, 0, 0);
-    width:100%;
-    left:0;
+
+/** Main body styling */
+main {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    width: 100%;
     position: relative;
-    right:0;
-    margin-top:200px
+    margin-top: 200px;
 }
-/**Styling the ABOUT section of the */
-.section{
-    background-color: #bbcfff;
+
+/** Section styling */
+.section {
+    background-color: #b1c1ee;
     margin-left: 1.5%;
-    margin-right:1.5%;
+    margin-right: 1.5%;
     border: solid;
     border-width: 1px;
     border-radius: 15px;
-    color:rgb(3, 3, 3);
+    color: rgb(0, 0, 0);
 }
-.clickable-bar{
-    background-color:inherit;
+
+/** Styling for clickable bars inside sections */
+.clickable-bar {
+    background-color: inherit;
     color: inherit;
     align-items: center;
     cursor: pointer;
@@ -132,65 +125,193 @@ main{
     border-width: inherit;
 }
 
-
-.clickable-bar:hover{
-    background-color:rgb(212, 222, 238) ;
-    color:rgb(0, 0, 0);
+.clickable-bar.animate {
+    transform: scale(1.2);
 }
-.profile{
+
+.clickable-bar:hover {
+    background-color: rgb(159, 166, 175);
+    color: rgb(0, 0, 0);
+}
+
+.profile {
     height: 70px;
     width: 70px;
 }
-.clickable-bar p{
+
+.clickable-bar p {
     font-size: 25px;
     text-align: center;
     position: relative;
 }
-.clickable-bar img, #about-drop-up img{
+
+.clickable-bar img, #about-drop-up img {
     height: 30px;
     width: 30px;
 }
-.hidden{
+
+/** Hidden class for toggling visibility */
+.hidden {
     display: none;
     overflow: hidden;
-    background-color:inherit;
-    color:inherit;
+    background-color: inherit;
+    color: inherit;
     border-top: 0;
-    border-bottom:inherit;
-    border-radius:inherit;
+    border-bottom: inherit;
+    border-radius: inherit;
     border-width: inherit;
 }
-/*welcome section styling*/
-.welcome p{
+
+/** Welcome section styling */
+.welcome p {
     text-align: center;
 }
-main div p{
+
+main div p {
     margin-left: 5%;
     margin-right: 5%;
     text-align: left;
 }
-main h2{
+
+main h2 {
     position: relative;
     left: 10px;
-
 }
-/**Styling the Missions Statements*/
-#missions, #visions, #values{
-    grid-template-columns: repeat(auto-fit,minmax(150px,1fr)); /*ensures that the grid adjust automatically based on screen size*/
-    gap:10px; /*Adds spacing between the items*/
+
+/** Grid for sections like missions, visions, values */
+#missions, #visions, #values {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
     padding: 10px;
     background-color: inherit;
 }
 
-#missions div img,#visions div img,#values div img{
+#missions div img, #visions div img, #values div img {
     width: 100px;
     height: 100px;
-    border-radius: 20px;   
+    border-radius: 20px;
 }
-#missions div, #visions div, #values div{
+
+#missions div, #visions div, #values div {
     padding: 20px;
     text-align: left;
     background-color: inherit;
     color: inherit;
+}
+
+/** Responsive styling for mobile and smaller devices */
+@media (max-width: 768px) {
+    /* For tablets and smaller devices */
+    body {
+        font-size: 14px;
+    }
+
+    .menu-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .clickable-bar {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    #missions, #visions, #values {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
+    .section {
+        margin: 10px;
+    }
+
+    #missions div img, #visions div img, #values div img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .profile {
+        height: 60px;
+        width: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* For smartphones */
+    body {
+        font-size: 12px;
+    }
+
+    .menu-buttons button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .section {
+        margin: 5px;
+    }
+
+    header {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .clickable-bar p {
+        font-size: 14px;
+    }
+
+    #missions div img, #visions div img, #values div img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .profile {
+        height: 50px;
+        width: 50px;
+    }
+
+    /* Hide the menu buttons on mobile and use a hamburger menu */
+    #menu {
+        display: none;
+    }
+
+    #menu-toggle {
+        display: block;
+        font-size: 20px;
+        cursor: pointer;
+        background: none;
+        color: white;
+    }
+}
+
+/** Mobile-specific styling for showing the menu */
+#menu.show {
+    display: flex;
+    flex-direction: column;
+    background-color: #35254e;
+    padding: 10px;
+}
+
+#menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-bottom: 1px solid #dfdaeb;
+}
+
+#menu a:hover {
+    background-color: #dfdaeb;
+    color: black;
+}
+
+/** Ensuring images scale well */
+img {
+    max-width: 100%;
+    height: auto;
 }
 
