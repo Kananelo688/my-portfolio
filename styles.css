@@ -30,10 +30,6 @@ header {
     text-align: center;
 }
 
-.mobile-menu{
-    display: none;
-}
-
 /** Mobile-first: Flex layout for menu buttons */
 .menu-buttons {
     display: flex;
@@ -108,13 +104,13 @@ main {
 
 /** Section styling */
 .section {
-    background-color: #b1c1ee;
-    margin-left: 3%;
-    margin-right: 3%;
+    background-color: #022891;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
     border: solid;
     border-width: 1px;
     border-radius: 15px;
-    color: rgb(0, 0, 0);
+    color: white;
 }
 
 /** Styling for clickable bars inside sections */
@@ -134,7 +130,7 @@ main {
 }
 
 .clickable-bar:hover {
-    background-color: rgb(159, 166, 175);
+    background-color: rgb(231, 212, 172);
     color: rgb(0, 0, 0);
 }
 
@@ -183,8 +179,7 @@ main h2 {
 }
 
 /** Grid for sections like missions, visions, values */
-#missions, #visions, #values 
-{
+#missions, #visions, #values {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 10px;
@@ -192,8 +187,7 @@ main h2 {
     background-color: inherit;
 }
 
-#missions div img, #visions div img, #values div img 
-{
+#missions div img, #visions div img, #values div img {
     width: 100px;
     height: 100px;
     border-radius: 20px;
@@ -206,14 +200,12 @@ main h2 {
     color: inherit;
 }
 
-/** Responsive styling for mobile and smaller devices */
-@media (max-width: 768px){
-    
+/*Hide mobile menu bar,if the device is a computer*/
+.mobile-menu{display: none;}
 
+/** Responsive styling for mobile and smaller devices */
+@media (max-width: 768px) {
     /* For tablets and smaller devices */
-    header{
-        display: none;
-    }
     .mobile-menu{
         background-color: #35254e;
         position: fixed;
@@ -221,55 +213,68 @@ main h2 {
         left: 0;
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: right;
         width: 100%;
         color: white;
         padding: 10px 20px;
         z-index: 1000;
     }
-    .menu-icon{
-        background: none;
-        border: none;
-        font-size: 1.5rem;
-        cursor: pointer;
-        color:rgb(255, 255, 255);
-        position: relative;  
+
+    #menu-icon{
+
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color:rgb(255, 255, 255);
+            position: relative;
+            right: 5px;
     }
 
     #menu-items{
         list-style: none;
+        margin: 0;
         padding: 2px;
-        position: relative;
+        position: absolute;
         top:50px;
-        margin-right: 5%;
-        background-color: #d4e3ff;
-        border: 1px solid #0a0a0a;
+        right:20px;
+        background-color: #bee0ff;
+        border: 1px solid #000000;
         border-radius:5px;
         z-index: 1000;
+    
         /*transition: opacity 0.5s ease, transform 0.3s ease;*/
     
     }
-
+    
     #menu-items li{
-    padding: 10px 20px;
+        padding: 5px 10px
     }
-
+    
     #menu-items li a{
-    text-decoration: none;
-    color:rgb(36, 77, 190);
+        text-decoration: none;
+        color:rgb(36, 77, 190);
     }
 
     body {
         font-size: 14px;
     }
 
-    .clickable-bar {
+    header {
+        display: none; /*Hide this section on mobile phones*/
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .clickable-bar p{
+        
         padding: 10px;
         font-size: 16px;
     }
 
     #missions, #visions, #values {
         flex-direction: column;
+        padding: 5px;
     }
 
     .section {
@@ -277,87 +282,8 @@ main h2 {
     }
 
     #missions div img, #visions div img, #values div img {
-        width: 40px;
-        height: 40px;
-    }
-
-    .profile {
-        height: 40px;
-        width: 40px;
-    }
-}
-
-@media (max-width: 480px) {
-    /* For smartphones */
-     /* For tablets and smaller devices */
-     header{
-        display: none;
-    }
-    .mobile-menu{
-        background-color: #35254e;
-        position: fixed;
-        top: 0;
-        left: 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        color: white;
-        padding: 5px 10px;
-        z-index: 1000;
-    }
-    .menu-icon{
-        background: none;
-        border: none;
-        font-size: 1.5rem;
-        cursor: pointer;
-        color:rgb(255, 255, 255);
-        position: relative;  
-    }
-
-    #menu-items{
-        list-style: none;
-        padding: 2px;
-        position: relative;
-        top:250px;
-        margin: 0px;
-        background-color: #d4e3ff;
-        border: 1px solid #0a0a0a;
-        border-radius:5px;
-        z-index: 1000;
-        /*transition: opacity 0.5s ease, transform 0.3s ease;*/
-    
-    }
-
-    #menu-items li{
-    padding: 5px 15px;
-    }
-
-    #menu-items li a{
-    text-decoration: none;
-    color:rgb(36, 77, 190);
-    }
-
-    body {
-        font-size: 10px;
-    }
-
-    .clickable-bar {
-        padding: 10px;
-        font-size: 8px;
-    }
-
-    #missions, #visions, #values {
-        flex-direction: column;
-    }
-
-    .section {
-        margin: 5px;
-    }
-
-    #missions div img, #visions div img, #values div img {
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
     }
 
     .profile {
@@ -366,4 +292,86 @@ main h2 {
     }
 }
 
+@media (max-width: 480px) {
+    /* For smartphones */
+
+    /*Menu Bar for Small Screens(smartphones)*/
+    .mobile-menu{
+        background-color: #35254e;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: right;
+        width: 100%;
+        color: white;
+        padding: 10px 20px;
+        z-index: 1000;
+    }
+
+    #menu-icon{
+
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color:rgb(255, 255, 255);
+            position: relative;
+            right: 5px;
+    }
+
+    #menu-items{
+        list-style: none;
+        margin: 0;
+        padding: 2px;
+        position: absolute;
+        top:50px;
+        right:20px;
+        background-color: #bee0ff;
+        border: 1px solid #000000;
+        border-radius:5px;
+        z-index: 1000;
+    
+        /*transition: opacity 0.5s ease, transform 0.3s ease;*/
+    
+    }
+    
+    #menu-items li{
+        padding: 5px 10px
+    }
+    
+    #menu-items li a{
+        text-decoration: none;
+        color:rgb(36, 77, 190);
+    }
+
+    body {
+        font-size: 12px;
+    }
+    .section {
+        margin: 5px;
+    }
+
+    header {
+        display: block;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .clickable-bar p {
+        font-size: 14px;
+    }
+
+    #missions div img, #visions div img, #values div img {
+        width:   40px;
+        height:  40px;
+    }
+
+    .profile {
+        height: 40px;
+        width: 40px;
+    }
+
+}
 
