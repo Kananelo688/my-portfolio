@@ -104,13 +104,13 @@ main {
 
 /** Section styling */
 .section {
-    background-color: #022891;
+    background-color: #95abe9;
     margin-left: 1.5%;
     margin-right: 1.5%;
     border: solid;
     border-width: 1px;
     border-radius: 15px;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 /** Styling for clickable bars inside sections */
@@ -130,7 +130,7 @@ main {
 }
 
 .clickable-bar:hover {
-    background-color: rgb(231, 212, 172);
+    background-color: rgb(250, 245, 235);
     color: rgb(0, 0, 0);
 }
 
@@ -354,7 +354,7 @@ main h2 {
     }
 
     header {
-        display: block;
+        display: none;
         padding: 10px;
         font-size: 12px;
     }
@@ -362,12 +362,15 @@ main h2 {
     .clickable-bar p {
         font-size: 14px;
     }
-
-    #missions div img, #visions div img, #values div img {
-        width:   40px;
-        height:  40px;
+    #missions, #visions, #values {
+        flex-direction: column;
+        padding: 10px;
     }
 
+    #missions div img, #visions div img, #values div img {
+        width:   30px;
+        height:  30px;
+    }
     .profile {
         height: 40px;
         width: 40px;
