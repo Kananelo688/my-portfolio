@@ -30,6 +30,10 @@ header {
     text-align: center;
 }
 
+.mobile-menu{
+    display: none;
+}
+
 /** Mobile-first: Flex layout for menu buttons */
 .menu-buttons {
     display: flex;
@@ -179,7 +183,8 @@ main h2 {
 }
 
 /** Grid for sections like missions, visions, values */
-#missions, #visions, #values {
+#missions, #visions, #values 
+{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 10px;
@@ -187,7 +192,8 @@ main h2 {
     background-color: inherit;
 }
 
-#missions div img, #visions div img, #values div img {
+#missions div img, #visions div img, #values div img 
+{
     width: 100px;
     height: 100px;
     border-radius: 20px;
@@ -203,6 +209,57 @@ main h2 {
 /** Responsive styling for mobile and smaller devices */
 @media (max-width: 768px) {
     /* For tablets and smaller devices */
+    header{
+        display: none;
+    }
+    .mobile-menu{
+        background-color: #35254e;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        color: white;
+        padding: 10px 20px;
+        z-index: 1000;
+    }
+    .mobile-menu h1{
+        margin-left: 1.5%;
+    }
+    .menu-icon{
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color:rgb(255, 255, 255);
+        position: relative;
+        margin-right: 1.5%;
+        
+    }
+    #menu-items{
+        list-style: none;
+        margin: 0;
+        padding: 2px;
+        position: absolute;
+        top:50px;
+        right:20px;
+        background-color: #f0dddd;
+        border: 1px solid #725050;
+        border-radius:5px;
+        z-index: 1000;
+        /*transition: opacity 0.5s ease, transform 0.3s ease;*/
+    
+    }
+
+    #menu-items li{
+    padding: 10px 20px
+    }
+
+    #menu-items li a{
+    text-decoration: none;
+    color:rgb(36, 77, 190);
+    }
+
     body {
         font-size: 14px;
     }
@@ -243,6 +300,16 @@ main h2 {
 
 @media (max-width: 480px) {
     /* For smartphones */
+    .menu-icon{
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color:rgb(255, 255, 255);
+        position: relative;
+        margin-right: 1.5%;
+    }
+
     body {
         font-size: 12px;
     }

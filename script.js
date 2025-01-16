@@ -31,13 +31,27 @@ function clickableBarEventHandler(){
     }
 
 }
+/**
+ * Function that Handles events fired by the menu button(only available on mobile phones).
+ */
+function menuButtonHandler(){
+    var x=document.getElementById("menu-items");
+    if (x.style.display == "none"){
+        x.style.display= "block";
+    }else{
+        x.style.display = "none";
+    }
 
+}
 function main(){
     //Add event listeners for clickable bars
     document.querySelectorAll(".clickable-bar").forEach(bar =>{
         bar.nextElementSibling.style.display = "none"; //ensure that the content is initially hidden
         bar.addEventListener('click',clickableBarEventHandler);
     });
+
+    //add event listener for menuButton on mobiles
+    document.getElementById("menu-icon").addEventListener('click',menuButtonHandler);
 }
 
 window.onload = main;
