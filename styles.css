@@ -219,14 +219,14 @@ main h2 {
         left: 0;
         display: flex;
         justify-content: space-between;
-        align-items: left;
+        align-items: right;
         width: 100%;
         color: white;
         padding: 10px 20px;
         z-index: 1000;
     }
     .mobile-menu h1{
-        margin-left: 1.5%;
+        margin-left: 5%;
     }
     .menu-icon{
         background: none;
@@ -235,7 +235,7 @@ main h2 {
         cursor: pointer;
         color:rgb(255, 255, 255);
         position: relative;
-        margin-right: 1.5%;
+        margin-right: 5%;
         
     }
     #menu-items{
@@ -244,7 +244,7 @@ main h2 {
         padding: 2px;
         position: absolute;
         top:50px;
-        right:20px;
+        margin-right: 5%;
         background-color: #f0dddd;
         border: 1px solid #725050;
         border-radius:5px;
@@ -283,6 +283,7 @@ main h2 {
 
     #missions, #visions, #values {
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        flex-direction: column;
     }
 
     .section {
@@ -305,6 +306,10 @@ main h2 {
     header{
         display: none;
     }
+    #missions, #visions, #values {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        flex-direction: column;
+    }
     .mobile-menu{
         background-color: #35254e;
         position: fixed;
@@ -319,7 +324,7 @@ main h2 {
         z-index: 1000;
     }
     .mobile-menu h1{
-        margin-left: 1.5%;
+        margin-left: 5%;
     }
     .menu-icon{
         background: none;
@@ -328,7 +333,7 @@ main h2 {
         cursor: pointer;
         color:rgb(255, 255, 255);
         position: relative;
-        margin-right: 1.5%;
+        margin-right: 5%;
         
     }
     #menu-items{
@@ -387,44 +392,6 @@ main h2 {
         height: 50px;
         width: 50px;
     }
-
-    /* Hide the menu buttons on mobile and use a hamburger menu */
-    #menu {
-        display: none;
-    }
-
-    #menu-toggle {
-        display: block;
-        font-size: 20px;
-        cursor: pointer;
-        background: none;
-        color: white;
-    }
 }
 
-/** Mobile-specific styling for showing the menu */
-#menu.show {
-    display: flex;
-    flex-direction: column;
-    background-color: #35254e;
-    padding: 10px;
-}
-
-#menu a {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    border-bottom: 1px solid #dfdaeb;
-}
-
-#menu a:hover {
-    background-color: #dfdaeb;
-    color: black;
-}
-
-/** Ensuring images scale well */
-img {
-    max-width: 100%;
-    height: auto;
-}
 
