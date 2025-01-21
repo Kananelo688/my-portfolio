@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <title>kananelo-chabeli-portolio</title>
+    <title>my education</title>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" rel="stylesheet" href="styles.css">    <script src="script.js" type="text/javascript"></script>
+    <link type="text/css" rel="stylesheet" href="styles.css">   
+     <script src="script.js" type="text/javascript"></script>
     </head>
     
-    <bod>
+    <body>
 
         <!--Header Section-->
         <header>
@@ -15,55 +16,150 @@
             <p class="head-line">Electrical and Computer Engineering Graduate(UCT) | Machine Learning Enthusiast | Cybersecurity Specialist </p>
 
             <div  class = "menu-buttons">
-                <button id="home-button" class="current-page">&#127968 Home</button>
-                <button id="experience-button">&#128188 Experience</button>
-                <button id="education-button">&#127979 Education</button>
-                <button id="skills-button">&#127942 Skills</button>
-                <button id="projects-button">&#128190 Projects</button>
+                <button id="home-button" class="current-page">
+                    &#127968 
+                    <a href="index.html">Home</a>
+                </button>
+                <button id="experience-button">
+                    &#128188 
+                    <a href="experience.html">Experience</a>
+                </button>
+                <button id="education-button">
+                    &#127979 
+                    <a href="education.html">Education</a>
+                </button>
+                <button id="skills-button">
+                    &#127942
+                    <a href="skills.html">Skills</a>
+                </button>
+                <button id="projects-button">
+                    &#128190
+                    <a href="projects.html">Projects</a>
+                </button>
             </div>
         </header>
 
         <!--Header Section for Tablets and Smart phones-->
         <div class = "mobile-menu">
-            <!-- Menu Button -->
-             <h1>Kananelo Chabeli</h1>
-            <button  id="menu-icon" class="menu-icon">&#9776;</button>
+            <!--Menu Button-->
+            <h1>Kananelo Chabeli</h1>
+            <div>
+                <button  id="menu-icon" class="menu-icon">&#9776;</button>
             <!-- Menu Items -->
-            <ul id="menu-items" style="display: none;">
-                <li>&#127968 <a href="index.html">Home</a></li>
-                <li>&#128188 <a href="#work-experience">Experience</a></li>
-                <li>&#127979 <a href="#education">Education</a></li>
-                <li>&#127942 <a href="#skills">Skills</a></li>
-                <li>&#128190 <a href="#project-titles">Projects</a></li>
-            </ul>
+                <ul id="menu-items" style="display: none;">
+                <li>&#127968 <a href="index.html" attribute-list >Home</a></li>
+                <li>&#128188 <a href="experience.html">Experience</a></li>
+                <li>&#127979 <a href="education.html">Education</a></li>
+                <li>&#127942 <a href="skills.html">Skills</a></li>
+                <li>&#128190 <a href="projects.html">Projects</a></li>
+                </ul>
+            </div>
         </div>
-
         <!--The main body of the Education Page Page-->
         <main>
-        </main>
+            <div class="mobile-navigation-buttons default-hide">
+                <a href="experience.html" title="got to education"><img src="images/prev.png"></a>
+                <a href="skills.html" title="go to projects"><img src="images/next.png"></a>
+            </div>
+            <h1>Educational Background</h1>
+            <div id="education" >
+            
+            <div class="schools">
+                <img src="images/uct_logo.jpeg"/>
+                <h3>University of Cape Town, Cape Town, South Africa</h3>
+                <p><i>March 2021 - December 2024</i></p>
+            </div>
 
+            <div class="degree">
+                <h5>BSc(Eng) Electrical and Computer Engineering</h5>
+            </div>
+            <ul>
+                <li> Graduated with First Honours Degree</li>
+                <li> Cummulative GPA: 76.23%</li>
+                <li>Relevant Coursework:
+                    <ul>
+                        <li>EEE3089F( Electromagnetic Engineering):   94%</li>
+                        <li>EEE3096S( Embedded System II): 75%</li>
+                        <li>EEE4020F( High Performance Embedded Systems): 83%</li>
+                        <li>EEE4021F( Mobile and Wireless Networks): 83% </li>
+                        <li>EEE4114F( Digital Signal Processing): 70%</li>
+                    </ul>
+                </li>
+                <li>Final year research topic: Predictive Admission Control and Bandwidth Allocation Scheme for Integreted Terrestrial and Non-terrestrial Network ( scored 75%)</li>
+            </ul>
+
+            <a href="site-files/Academic_Transcript_UCT.pdf" download="Kananelo_Chabeli_UCT.pdf">
+                Transcript
+            </a>
+
+            <div class="schools">
+                <img style="width:150px;height:70px;"src="images/nul Logo.png"/>
+                <h3>National University of Lesotho, Maseru, Lesotho</h3>
+                <p><i>July 2019 - September 2020</i></p>
+            </div>
+
+            <div class="degree">
+                <h5>BSc General First Year</h5>
+            </div>
+            <ul>
+                <li>Completed with distinctions</li>
+                <li>GPA 4.6</li>
+                <li>Relevant Coursework:
+                    <ul><li>Introduction to Finite Mathematics: A</li>
+                        <li>Calculus 1: A</li>
+                        <li>Introduction to Computer Science: B</li>
+                        <li>Introductory to Physics 1: A</li>
+                        
+                    </ul>
+                </li>
+
+            </ul>
+            <a href="site-files/NUL_Trancsript.pdf" attribute-list download="Kananelo_Chabelu_NUL.pdf">
+                Transcript
+            </a>
+
+            <div class="schools">
+                <img src="images/kingsgate.jpg"/>
+                <h3>Kingsgate High School, Mafeteng, Lesotho</h3>
+                <p><i>Jan 2014 - Nov 2018</i></p>
+            </div>
+
+            <div class="degree">
+                <h5>Lesotho General Certificate of Secondary Education(LGCSE)</h5>
+            </div>
+            <ul>
+                <li>Ranked Top 5, nation-wide</li>
+                <li>Obtainted three A*'s</li>
+            </ul>
+
+            <a href="site-files/LGSCE.pdf" attribute-list download="Kananelo_Chabeli_LGCSE.pdf">
+                Transcript
+            </a>
+
+            <p></p>
+
+            </div>
+        </main>
         <!--The footer section-->
         <footer>
-
-            <div id="contact-details">
-                <h4>Contact Details:</h4>
-                <p> &#128231 Email: <a href="mailto:kchabeli688@gmail.com" target="_blank" rel="noopener noreferrer">kchabeli688@gmail.com</a></p>
-                <p> &#128222 Phone: +266 62834156 or +27 792406728</p>
-                <p> <a href="https://wa.me/+27792406728?text=Hello,%20I%20want%20to%20connect%20with%20you" target="_blank">
-                    <img src="images/whatsapp.png">
-                </a>WhatsApp: +27 792406728</p>
+            <h4 class = "footer-center">Contact Details:</h4>
+            <p class = "footer-center"> &#128231 Email: <a href="mailto:kchabeli688@gmail.com" target="_blank" rel="noopener noreferrer">kchabeli688@gmail.com</a></p>
+            <p class = "footer-center"> &#128222 Phone: +266 62834156 or +27 792406728</p>
+            <p class = "footer-center"> <a href="https://wa.me/+27792406728?text=Hello,%20I%20want%20to%20connect%20with%20you" target="_blank">
+                <img src="images/whatsapp.png">
+            </a class = "footer-center">WhatsApp: +27 792406728</p>
+            <h4 class = "footer-center">Social Links:</h4>
+            <div id="social-link-icons" class = "footer-center">
+                <a href="https://www.linkedin.com/in/kananelo-chabeli-a5446a246/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/linkedin.png"></a>
+                <a href="https://github.com/Kananelo688" target="_blank" rel="noopener noreferrer">
+                    <img src="images/github.png"></a>
+                <a href="https://www.facebook.com/kaylahbooh.malco" target="_blank" rel="noopener noreferrer">
+                    <img src="images/facebook.svg"></a>
+                <a href="https://x.com/kchabeli688" target="_blank" rel=" noopener noreferrer">
+                    <img src="images/twitter.png"></a>
             </div>
-
-            <div id="social-links">
-                <h4>Social Links:</h4>
-                <div id="social-link-icons">
-                    <a href="linkedin" target="_blank" rel="noopener noreferrer"><img src="images/linkedin.png"></a>
-                    <a href="github" target="_blank" rel="noopener noreferrer"><img src="images/github.png"></a>
-                    <a href="facebook" target="_blank" rel="noopener noreferrer"><img src="images/facebook.svg"></a>
-                    <a href="twitter" target="_blank" rel=" noopener noreferrer"><img src="images/twitter.png"></a>
-                </div>
-            </div>
-
+            <p class = "footer-center">Copyright 2025. Designed by Kananelo Chabeli.</p>
         </footer>
-    </bod>
+    </body>
 </html>

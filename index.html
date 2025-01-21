@@ -7,7 +7,7 @@
     <link type="text/css" rel="stylesheet" href="styles.css">    <script src="script.js" type="text/javascript"></script>
     </head>
     
-    <bod>
+    <body>
 
         <!--Header Section-->
         <header>
@@ -15,11 +15,26 @@
             <p class="head-line">Electrical and Computer Engineering Graduate(UCT) | Machine Learning Enthusiast | Cybersecurity Specialist </p>
 
             <div  class = "menu-buttons">
-                <button id="home-button" class="current-page">&#127968 Home</button>
-                <button id="experience-button">&#128188 Experience</button>
-                <button id="education-button">&#127979 Education</button>
-                <button id="skills-button">&#127942 Skills</button>
-                <button id="projects-button">&#128190 Projects</button>
+                <button id="home-button" class="current-page">
+                    &#127968 
+                    <a href="index.html">Home</a>
+                </button>
+                <button id=experience-button">
+                    &#128188 
+                    <a href="experience.html">Experience</a>
+                </button>
+                <button id="education-button">
+                    &#127979 
+                    <a href="education.html">Education</a>
+                </button>
+                <button id="skills-button">
+                    &#127942
+                    <a href="skills.html">Skills</a>
+                </button>
+                <button id="projects-button">
+                    &#128190
+                    <a href="projects.html">Projects</a>
+                </button>
             </div>
         </header>
 
@@ -30,18 +45,21 @@
             <div>
                 <button  id="menu-icon" class="menu-icon">&#9776;</button>
             <!-- Menu Items -->
-            <ul id="menu-items" style="display: none;">
-                <li>&#127968 <a href="index.html">Home</a></li>
-                <li>&#128188 <a href="#work-experience">Experience</a></li>
-                <li>&#127979 <a href="#education">Education</a></li>
-                <li>&#127942 <a href="#skills">Skills</a></li>
-                <li>&#128190 <a href="#project-titles">Projects</a></li>
-            </ul>
+                <ul id="menu-items" style="display: none;">
+                    <li>&#127968 <a href="index.html">Home</a></li>
+                    <li>&#128188 <a href="experience.html">Experience</a></li>
+                    <li>&#127979 <a href="education.html">Education</a></li>
+                    <li>&#127942 <a href="skills.html">Skills</a></li>
+                    <li>&#128190 <a href="projects.html">Projects</a></li>
+                </ul>
             </div>
         </div>
 
         <!--The main body of the Home Page-->
         <main>
+            <div class="mobile-navigation-buttons-single default-hide">
+                <a href="experience.html" title="experience"><img src="images/next.png"></a>
+            </div>
             <div class="welcome">    
                 <p>
                     Welcome to my portfolio!!<br /> <br/>
@@ -54,9 +72,9 @@
 
             <div class="section">
                 <div id="about-drop-down" class="clickable-bar" role="button">
-                    <img style="width: 80px;height: 80px;" src=" images/profile.png"/>
+                    <img style="width: 50px;height: 50px;" src=" images/profile.png"/>
                     <p><b>About Me</b></p>
-                    <img src="images/dropdown.png"/>
+                    <img src="images/dropdown.png" class="drop-down-icon"/>
                 </div>
 
                 <div id="about" class="hidden">
@@ -80,51 +98,48 @@
                         Whether developing hardware or crafting innovative software solutions, I am committed to delivering excellence and advancing the frontiers of technology in meaningful ways.
                     </p>
                 </div>
-            </div>
-    
+            </div>   
             <hr>
-
             <!--Visions Section-->
 
             <div class="section">
                 <div id="visions-drop-down" class="clickable-bar" role="button">
                     <img src=" images/vision.png" id="visions-icon"/>
                     <p><b>My Visions</b></p>
-                    <img src="images/dropdown.png"/>
+                    <img src="images/dropdown.png" class="drop-down-icon"/>
                 </div>
 
                 <div class="hidden" id = "visions">
                     <div>
                         <img src="images/cybersecurity-picture.webp"/>
                         <b>1. Pioneering Secure and Resilient Technology Solutions:<br /></b>
-                        I envisioning a future where critical systems are safeguarded through
+                        I envision a future where critical systems are safeguarded through
                          innovative and robust security measures
                     </div>
 
                     <div>
                         <img src="images/wireless-technologies.jpg"/>
                         <b>2. Shaping the Future of Wireless and Cyber-Physical Networks:<br /></b>
-                        Aspiring to redefine connectivity and system integration with 
+                        I Aspire to redefine connectivity and system integration with 
                         next-generation wireless technologies like 5G/6G.
                     </div>
 
                     <div>
                         <img src="images/ai.jpeg"/>
                         <b>3. Empowering Smarter Decision-Making through AI:<br /></b>
-                        Leveraging intelligent algorithms to revolutionize how systems 
+                        I envision Africa where intelligent algorithms are leveraged to revolutionize how systems 
                         operate and adapt to complex real-world challenges.
                     </div>
                     
                 </div>
             </div>
-
             <hr>
             <!--Mission Section-->
             <div class="section">
                 <div id="missions-drop-down" class="clickable-bar" role="button">
                     <img id="missions-icon" src=" images/mission-icon.png"/>
                     <p><b>My Misions</b></p>
-                    <img src="images/dropdown.png"/>
+                    <img src="images/dropdown.png" class="drop-down-icon"/>
                 </div>
 
                 <div class="hidden" id = "missions">
@@ -154,7 +169,6 @@
                     
                 </div>
             </div>
-
             <hr>
             <!--Values Section-->
             <div class="section">
@@ -162,7 +176,7 @@
                 <div id="values-drop-down" class="clickable-bar" role="button">
                     <img id="values-icon" src="images/value.png"/>
                     <p><b>My Core Values</b></p>
-                    <img src="images/dropdown.png" />
+                    <img src="images/dropdown.png" class="drop-down-icon" />
                 </div>
 
                 <div class="hidden" id = "values">
@@ -193,7 +207,6 @@
                     </div>
                 </div>
             </div>
-
             <hr>
             
         </main>
@@ -201,25 +214,20 @@
         <!--The footer section-->
         <footer>
 
-            <div id="contact-details">
-                <h4>Contact Details:</h4>
-                <p> &#128231 Email: <a href="mailto:kchabeli688@gmail.com" target="_blank" rel="noopener noreferrer">kchabeli688@gmail.com</a></p>
-                <p> &#128222 Phone: +266 62834156 or +27 792406728</p>
-                <p> <a href="https://wa.me/+27792406728?text=Hello,%20I%20want%20to%20connect%20with%20you" target="_blank">
+                <h4 class = "footer-center">Contact Details:</h4>
+                <p class = "footer-center"> &#128231 Email: <a href="mailto:kchabeli688@gmail.com" target="_blank" rel="noopener noreferrer">kchabeli688@gmail.com</a></p>
+                <p class = "footer-center"> &#128222 Phone: +266 62834156 or +27 792406728</p>
+                <p class = "footer-center"> <a href="https://wa.me/+27792406728?text=Hello,%20I%20want%20to%20connect%20with%20you" target="_blank">
                     <img src="images/whatsapp.png">
-                </a>WhatsApp: +27 792406728</p>
-            </div>
-
-            <div id="social-links">
-                <h4>Social Links:</h4>
-                <div id="social-link-icons">
-                    <a href="linkedin" target="_blank" rel="noopener noreferrer"><img src="images/linkedin.png"></a>
-                    <a href="github" target="_blank" rel="noopener noreferrer"><img src="images/github.png"></a>
-                    <a href="facebook" target="_blank" rel="noopener noreferrer"><img src="images/facebook.svg"></a>
-                    <a href="twitter" target="_blank" rel=" noopener noreferrer"><img src="images/twitter.png"></a>
+                </a class = "footer-center">WhatsApp: +27 792406728</p>
+                <h4 class = "footer-center">Social Links:</h4>
+                <div id="social-link-icons" class = "footer-center">
+                    <a href="https://www.linkedin.com/in/kananelo-chabeli-a5446a246/" target="_blank" rel="noopener noreferrer"><img src="images/linkedin.png"></a>
+                    <a href="https://github.com/Kananelo688" target="_blank" rel="noopener noreferrer"><img src="images/github.png"></a>
+                    <a href="https://www.facebook.com/kaylahbooh.malco" target="_blank" rel="noopener noreferrer"><img src="images/facebook.svg"></a>
+                    <a href="https://x.com/kchabeli688" target="_blank" rel=" noopener noreferrer"><img src="images/twitter.png"></a>
                 </div>
-            </div>
-
+                <p class = "footer-center">Copyright 2025. Designed by Kananelo Chabeli.</p>
         </footer>
-    </bod>
+    </body>
 </html>

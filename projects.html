@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>kananelo-chabeli-portolio</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="styles.css">    
+    <script src="script.js" type="text/javascript"></script>
+    </head>
+    
+    <body>
+        <!--Header Section-->
+        <header>
+            <h1 class="name">Kananelo Chabeli</h1>
+            <p class="head-line">Electrical and Computer Engineering Graduate(UCT) | Machine Learning Enthusiast | Cybersecurity Specialist </p>
+
+            <div  class = "menu-buttons">
+                <button id="home-button" class="current-page">
+                    &#127968 
+                    <a href="index.html">Home</a>
+                </button>
+                <button id="experience-button">
+                    &#128188 
+                    <a href="experience.html">Experience</a>
+                </button>
+                <button id="education-button">
+                    &#127979 
+                    <a href="education.html">Education</a>
+                </button>
+                <button id="skills-button">
+                    &#127942
+                    <a href="skills.html">Skills</a>
+                </button>
+                <button id="projects-button">
+                    &#128190
+                    <a href="projects.html">Projects</a>
+                </button>
+            </div>
+        </header>
+
+        <!--Header Section for Tablets and Smart phones-->
+        <div class = "mobile-menu">
+            <!--Menu Button-->
+            <h1>Kananelo Chabeli</h1>
+            <div>
+                <button  id="menu-icon" class="menu-icon">&#9776;</button>
+            <!-- Menu Items -->
+                <ul id="menu-items" style="display: none;">
+                <li>&#127968 <a href="index.html">Home</a></li>
+                <li>&#128188 <a href="experience.html">Experience</a></li>
+                <li>&#127979 <a href="education.html">Education</a></li>
+                <li>&#127942 <a href="skills.html">Skills</a></li>
+                <li>&#128190 <a href="projects.html">Projects</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--The main body of the Home Page-->
+        <main>
+            <div class="mobile-navigation-buttons-single default-hide">
+                <a href="skills.html" title="got to education"><img src="images/prev.png"></a>
+               
+            </div>
+            <h1>My Projects Portfolio</h1>
+            <div class = "section">
+                <div class="clickable-bar" role="button">
+                    <img src="images/radar.jpg" class="project-icon">
+                    <p><b>Vehicle Speed Estimation Using Continuous Wave Radar</b></p>
+                    <img src="images/dropdown.png" class="drop-down-icon">
+                </div>
+
+                <div class="hidden">
+                    <p><b>Supervisor:</b> Dr Yunus Abdul Gaffar | <b>Role:</b>Research Assistance</p>
+                    <p><b>Project Description:</b><br>
+                    This project involved developing a system for vehicle speed estimation using 
+                    continuous-wave radar technology. Two radar systems, the uRAD and IPM365, 
+                    were utilized to capture Doppler shift data for velocity measurement. 
+                     By processing the radar signals, accurate speed estimations were achieved 
+                   for vehicles moving under various conditions.
+                    <br/>
+                    <br />
+                    The uRAD system demonstrated significantly better performance compared to 
+                    the IPM365 in terms of accuracy, reliability, and adaptability to varying
+                    environments. The project included signal acquisition, processing, and 
+                    analysis to evaluate the capabilities of each radar system. This work showcased
+                    expertise in radar signal processing, real-time data analysis, and performance 
+                    evaluation of modern sensing technologies, highlighting the potential of 
+                    continuous-wave radar in intelligent transportation systems.
+                    </p>
+
+                    <a target="_blank" class="download-link" href="site-files/radar-report.pdf" attribute-list download="Kananelo-Radar-Report.pdf">Download</a>
+                </div>
+
+            </div>
+
+            <hr>
+            <div class="section">
+                <div class="clickable-bar" role="button">
+                    <img src="images/6g_pic.jpg" class="project-icon">
+                    <p><b>Predictive Admission Control and Bandwidth Allocation Scheme for 6G Networks</b></p>
+                    <img src="images/dropdown.png" class="drop-down-icon">
+                </div>
+
+                <div class="hidden">
+                    <p><b>Supervisor:</b> A/Prof Olabisi Falowo | <b>Role:</b>Principal Researcher</p>
+                    <p><b>Project Description:</b><br>
+                        This project focused on designing a predictive call admission control and bandwidth allocation scheme 
+                        for integrated terrestrial and non-terrestrial networks(6G) comprising of Low-Earth Orbit Satellite and Terrestrial 5G.
+                        The primary goal of the project was to develop admission scheme that reduces frequency of horizontal handoffs
+                        in satellite access networks, thus improving overall quality of service.
+                        <br />
+                        <br />
+                        A Generalized Linear Model(GLM) was developed to predict call durations at the time of
+                        call initiation. Input features included user-specific details such as caller and 
+                        callee IDs, call time, the available network resources, and satellite visibility times to admit 
+                        users into the most appropriate network segment.
+                
+                        Key metrics for evaluating the algorithm included call blocking probability and
+                        satellite handoff probability. <b>Call Blocking Probability(CBP) </b> is the probability that 
+                        a call is blocked due to insufficient resources. On the other hand, <b>Satellite handoff Probability(SHP)</b> is the probability
+                        that a call admitted into the satellite access network experience a handoff- resulting from the current
+                        satellite moving out of view while the call is still on-going.
+                        Synthetic call detail records were generated for training and testing the model, 
+                        ensuring realistic traffic patterns based on user behavior and network conditions.
+
+                        <br /> 
+                        <br />
+                        This work demonstrates expertise in advanced network optimization, predictive 
+                        modeling, and next-generation communication systems, showcasing innovative approaches 
+                        enhancing the efficiency of integrated 6G networks.
+                    </p>
+                    <a target="_blank" class="download-link" href="site-files/EEE4022S_Research.pdf" attribute-lits download="Kananelo-6G-Research.pdf">Download</a>
+                </div>
+            </div>
+
+            <hr>
+            <div class = "section">
+                <div class="clickable-bar" role="button">
+                    <img src="images/Cell_tower_1.jpg" class="project-icon">
+                    <p><b>Radio Access Technology(RAT) Selection Algorithm in Heterogeneous Wireless Networks</b></p>
+                    <img src="images/dropdown.png" class="drop-down-icon">
+                </div>
+
+                <div class="hidden">
+                    <p><b>Supervisor:</b> N/a (Course Project)| <b>Role:</b>Principal Researcher</p>
+                    <p><b>Project Description:</b></p>
+                    <p>
+                        This project focused on developing a Radio Access Technology (RAT) selection algorithm 
+                        using the Technique for Order Preference by Similarity to Ideal Solution (TOPSIS) 
+                        in heterogeneous wireless networks. The goal was to optimize the selection of RATs—such as
+                         5G, WiFi, 4G and WiMAX—based on their performance in terms of bandwidth, latency, 
+                         energy efficiency, cost,  and reliability
+        
+                        The algorithm leverages TOPSIS to evaluate multiple RATs by calculating their
+                        proximity to an ideal solution, considering various criteria such as cost, latency, bit error rate, and bandwidth. By integrating these factors,
+                        the algorithm ensures efficient and dynamic RAT selection, balancing QoS and 
+                        resource utilization.
+        
+                      <h5>Key Components of the project included:</h5>
+                      <ul>
+                        <li>Developing a TOPSIS-based framework to evaluate and rank RATs</li>
+                        <li>Implementing the algorithm to dynamically adapt to changing network conditions</li>
+                        <li>Simulating the algorithm's performance under different scenarios to validate its effectiveness in enhancing network performance</li>
+        
+                      </ul>
+                    </p>
+                    <p>
+                        This work highlights expertise in network optimization, decision-making algorithms, 
+                        and heterogeneous network resource management, showcasing the ability to design intelligent solutions for improving 
+                         experience in complex wireless environments.
+                    </p>
+                    
+                    <a   target="_blank" class="download-link" href="site-files/RAT-selection.pdf" attribute-lits download="Kananelo-RAT-selection.pdf">Download</a>
+
+                </div>
+            </div>
+
+            <hr>
+            <div class="section">
+                <div class="clickable-bar" role="button">
+                    <img src="images/drongos.jpeg" class="project-icon">
+                    <p><b>IoT Weight Scale for Ornithology Research</b></p>
+                    <img src="images/dropdown.png" class="drop-down-icon">
+                </div>
+
+                <div class="hidden">
+                    <p><b>Supervisor:</b> N/a (Course Project)| <b>Role:</b>Embedded Systems Developer</p>
+                    <p><b>Project Description:</b></p>
+                    <p>
+                        This project focused on designing and implementing an IoT-enabled scale to measure
+                        the weight of Fork-Tailed Drongos as part of ornithological research in the Kalahari 
+                        Desert. The scale was developed to operate in harsh environmental conditions
+                        while providing accurate and reliable weight measurements.
+                            <br />
+                            <br />
+                        The system integrated precise weight sensors with an ESP32 ,micro-controller 
+                        module for real-time data transmission, enabling researchers to monitor the
+                        birds remotely. The design prioritized low power consumption and robust
+                        hardware to withstand extreme temperatures and dust. Thorugh continuous interaction with the end-user,and
+                        repeated refinement of requirements, this work demonstrated strong abilities of user-centric systems design and excellent
+                        adaptability in agile environments. Furthermore,  the work demonstrated
+                        skills in IoT systems development and sensor integration, 
+                        contributing to advancements in wildlife monitoring and ecological research 
+                        technologies.
+                    </p>
+
+                    <a target="_blank" class="download-link" href="site-files/IoT-Scale.pdf" attribute-lits download="Kananelo-IoT-Scale.pdf">Download</a>
+
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="section">
+                <div class="clickable-bar" role="button">
+                    <img src="images/signal.jpg" class="project-icon">
+                    <p><b> Adaptive Channel Equaliation for Digital Communication Systems</b></p>
+                    <img src="images/dropdown.png" class="drop-down-icon">
+                </div>
+
+                <div class="hidden">
+                    <p><b>Supervisor:</b> N/a (Course Project)| <b>Role:</b>Embedded Systems Developer</p>
+                    <p><b>Project Description:</b></p>
+                    <p>
+                        This project involved designing and implementing a channel equalization system 
+                        to address the challenges posed by channel distortion in digital communication 
+                        systems. By employing the Least Mean Squares (LMS) algorithm, the system adaptively
+                         minimized errors and compensated for inter-symbol interference (ISI) and channel 
+                         noise. The equalizer dynamically adjusted filter coefficients based on received
+                          signals, ensuring optimal performance in real-time scenarios.
+                        <br />
+                        <br />
+                        Extensive simulations were conducted to test the system under various channel conditions and 
+                        noise levels, with performance evaluated using bit error rate (BER) and convergence
+                        speed. This work highlights a strong understanding of adaptive filtering, digital signal processing,
+                        and communication system design, demonstrating the ability to develop robust solutions for 
+                        enhancing signal integrity in modern networks.
+                    </p> 
+                    
+                    <a target="_blank" class="download-link" href="site-files/DSP_Project.pdf" attribute-lits download="Kananelo-Channel-Equalization.pdf">Download</a>
+                    
+                </div>
+            </div>
+
+            <hr>
+            <div class="section">
+                <div class="clickable-bar" role="button">
+                    <img src="images/FPGA.webp" class="project-icon">
+                    <p><b>FPGA Implementation of Image Median Filter</b></p>
+                    <img src="images/dropdown.png" class="drop-down-icon">
+                </div>
+
+                <div class="hidden">
+                    <p><b>Supervisor:</b> N/a (Course Project)| <b>Role:</b>Embedded Systems Developer</p>
+                    <p><b>Project Description:</b></p>
+                    <p>
+                        This project involved designing and implementing a hardware-accelerated median 
+                        filter on an FPGA, targeting real-time noise reduction in digital image processing. 
+                        The median filter, widely used for removing salt-and-pepper noise, was developed 
+                        to process high-resolution images efficiently while maintaining low latency.
+                        <br />
+                        <h5>Key competencies of the project included:</h5>
+                            <ul>
+                                <li><b>Design: </b>Developing a hardware-friendly algorithm for median filtering using a 
+                                    sliding window approach and sorting logic.
+                                </li>
+                                <li><b>Digital Accelerator Implementayion:</b>Writing HDL code to implement the filter on an FPGA platform, optimizing for performance and resource utilization.</li>
+                                <li>
+                                    <b>Digital Systems Validation:</b> Evaluating the implementation using synthetic and real-world image data to ensure accuracy and real-time processing capabilities.
+        
+                                </li>
+        
+                                <li>
+                                    <b>System Optimization:</b>Achieving a balance between high throughput, low resource usage, and minimal power consumption.
+                                    This project highlights skills in digital design, hardware acceleration, and image processing, showcasing the ability to translate complex algorithms into efficient
+                                     hardware implementations for embedded systems.
+                                </li>
+                            </ul>
+                    </p>
+
+                    <a target="_blank" class="download-link" href="site-files/EEE4120F_Project.pdf" attribute-lits download="Kananelo-FPGA.pdf">Download</a>
+
+                </div>
+            </div>
+    
+            <hr>
+            <div class="section">
+                <div class="clickable-bar" role="button">
+                    <img src="images/sound.jpg" class="project-icon">
+                    <p><b>Acoustic Triangulation using TDoA and Distributed Sensor Networks</b></p>
+                    <img src="images/dropdown.png" class="drop-down-icon">
+                </div>
+
+                <div class="hidden">
+                    <p><b>Supervisor:</b> N/a (Course Project)| <b>Role:</b>Embedded Systems Developer</p>
+                    <p><b>Project Description:</b>
+                    </p>
+
+                    <p>
+                    This project focused on developing a system for acoustic source localization
+                    using triangulation methods within a distributed sensor network. The system 
+                    employed multiple spatially dispersed sensors to capture acoustic signals,
+                    and by analyzing the differences in arrival times, the precise location of the 
+                    sound source was determined.
+                          <br />
+                          <br />
+        
+                    The project involved designing algorithms for time-difference-of-arrival (TDOA)
+                    estimation and implementing these algorithms to ensure accurate triangulation even 
+                    in the presence of environmental noise. Simulations and practical experiments were 
+                    conducted to validate the system's performance under varying conditions. This work 
+                    demonstrated expertise in sensor network design, acoustic signal processing, and 
+                    localization techniques, showcasing the ability to build reliable and efficient 
+                    distributed systems for real-world applications.
+                    </p>
+
+                    <a class="download-link" href="site-files/triangulation.pdf" attribute-lits download="Kananelo-triangulation.pdf" target="_blank">
+                        Download
+                    </a>
+
+
+                </div>
+
+            </div>
+        </main>
+
+        <!--The footer section-->
+        <footer>
+
+            <h4 class = "footer-center">Contact Details:</h4>
+            <p class = "footer-center"> &#128231 Email: <a href="mailto:kchabeli688@gmail.com" target="_blank" rel="noopener noreferrer">kchabeli688@gmail.com</a></p>
+            <p class = "footer-center"> &#128222 Phone: +266 62834156 or +27 792406728</p>
+            <p class = "footer-center"> <a href="https://wa.me/+27792406728?text=Hello,%20I%20want%20to%20connect%20with%20you" target="_blank">
+                <img src="images/whatsapp.png">
+            </a class = "footer-center">WhatsApp: +27 792406728</p>
+            <h4 class = "footer-center">Social Links:</h4>
+            <div id="social-link-icons" class = "footer-center">
+                <a href="https://www.linkedin.com/in/kananelo-chabeli-a5446a246/" target="_blank" rel="noopener noreferrer"><img src="images/linkedin.png"></a>
+                <a href="https://github.com/Kananelo688" target="_blank" rel="noopener noreferrer"><img src="images/github.png"></a>
+                <a href="https://www.facebook.com/kaylahbooh.malco" target="_blank" rel="noopener noreferrer"><img src="images/facebook.svg"></a>
+                <a href="https://x.com/kchabeli688" target="_blank" rel=" noopener noreferrer"><img src="images/twitter.png"></a>
+            </div>
+            <p class = "footer-center">Copyright 2025. Designed by Kananelo Chabeli.</p>
+        </footer>
+    </body>
+</html>

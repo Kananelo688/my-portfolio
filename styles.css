@@ -15,7 +15,7 @@ html, body {
 
 /** General styles for the header */
 header {
-    background-color: #35254e;
+    background-color:darkgreen;
     position: fixed;
     top: 0;
     left: 0;
@@ -38,6 +38,11 @@ header {
     font-family: inherit;
     flex-wrap: wrap;
     gap: 15px;
+}
+
+.menu-buttons a{
+    color: inherit;
+    text-decoration: none;
 }
 
 .menu-buttons button {
@@ -63,25 +68,38 @@ header {
     border-radius: 4px;
 }
 
+.default-hide {
+    display: none;
+}
+
 /** Footer section styling */
 footer {
-    display: flex;
-    justify-content: space-between;
+    display: block;
     align-items: center;
-    background-color: #35254e;
+    background-color:darkgreen;
     width: 100%;
     color: white;
     padding: 10px 20px;
 }
+footer p a img{
+    width:20px;
+    height:20px;
+}
+
+.footer-center{
+    text-align: center;
+}
+
+
 
 /* Social link icons grid for footer */
 #social-link-icons {
     display: grid;
     gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
     padding: 10px;
     background-color: inherit;
-    margin-right: 5%;
+    margin: 5%;
 }
 
 #contact-details {
@@ -104,7 +122,7 @@ main {
 
 /** Section styling */
 .section {
-    background-color: #95abe9;
+    background-color:rgb(189, 253, 106);
     margin-left: 1.5%;
     margin-right: 1.5%;
     border: solid;
@@ -123,6 +141,7 @@ main {
     justify-content: space-between;
     border-radius: inherit;
     border-width: inherit;
+    height: 50px;
 }
 
 .clickable-bar.animate {
@@ -130,7 +149,7 @@ main {
 }
 
 .clickable-bar:hover {
-    background-color: rgb(250, 245, 235);
+    background-color: rgb(63, 255, 63);
     color: rgb(0, 0, 0);
 }
 
@@ -145,14 +164,14 @@ main {
     position: relative;
 }
 
-.clickable-bar img, #about-drop-up img {
-    height: 30px;
-    width: 30px;
+.drop-down-icon{
+    height: 25px;
+    width: 25px;
 }
 
 #visions-icon, #missions-icon, #values-icon{
-    width:80px;
-    height: 80px;
+    width:50px;
+    height: 50px;
     border-radius: inherit;
 }
 
@@ -168,8 +187,9 @@ main {
     border-width: inherit;
 }
 
+
 /** Welcome section styling */
-.welcome p {
+.welcome p, .footer-center{
     text-align: center;
 }
 
@@ -183,6 +203,66 @@ main h2 {
     position: relative;
     left: 10px;
 }
+
+/*Experience Page Styles*/
+.work-header{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.work-header img,.schools img{
+    height: 60px;
+    width: 60px;
+    border-radius: inherit;
+}
+
+
+/*Education Page Styles*/
+.schools{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+#education,#experience,#skills, #projects{
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    background-color: rgb(189, 253, 106);
+    border-radius: 5px;
+}
+
+#education a, .download-link{
+    text-decoration: none;
+    color:blue;
+
+    position: relative;
+    left: 45%;
+}
+/*Stylesfor Skills Page*/
+.technical-skills,.tools{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    gap:10px; /*Adds spacing between the items*/
+    padding: 10px;
+    background-color: inherit;
+
+}
+
+.technical-skills div, .tools div{
+    padding: 50px;
+    text-align: left;
+    background-color: inherit;
+    color: inherit;
+}
+
+.technical-skills div img, .tools div img, .project-icon{
+    width : 50px;
+    height: 50px;
+    border-radius: inherit;
+}
+
 
 /** Grid for sections like missions, visions, values */
 #missions, #visions, #values {
@@ -209,104 +289,13 @@ main h2 {
 /*Hide mobile menu bar,if the device is a computer*/
 .mobile-menu{display: none;}
 
-/** Responsive styling for mobile and smaller devices */
-@media (max-width: 768px) {
-    /* For tablets and smaller devices */
-    .mobile-menu{
-        background-color: #35254e;
-        position: fixed;
-        top: 0;
-        left: 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: right;
-        width: 100%;
-        color: white;
-        padding: 10px 20px;
-        z-index: 1000;
-    }
-
-    #menu-icon{
-
-            background: none;
-            border: none;
-            font-size: 1.5rem;
-            cursor: pointer;
-            color:rgb(255, 255, 255);
-            position: relative;
-            right: 5px;
-    }
-
-    #menu-items{
-        list-style: none;
-        margin: 0;
-        padding: 2px;
-        position: absolute;
-        top:50px;
-        right:20px;
-        background-color: #bee0ff;
-        border: 1px solid #000000;
-        border-radius:5px;
-        z-index: 1000;
-    
-        /*transition: opacity 0.5s ease, transform 0.3s ease;*/
-    
-    }
-    
-    #menu-items li{
-        padding: 5px 10px
-    }
-    
-    #menu-items li a{
-        text-decoration: none;
-        color:rgb(36, 77, 190);
-    }
-
-    body {
-        font-size: 14px;
-    }
-
-    header {
-        display: none; /*Hide this section on mobile phones*/
-        padding: 10px;
-        font-size: 14px;
-    }
-
-    .clickable-bar p{
-        
-        padding: 10px;
-        font-size: 16px;
-    }
-
-    #missions, #visions, #values {
-        flex-direction: column;
-        padding: 5px;
-    }
-
-    .section {
-        margin: 10px;
-    }
-
-    #missions div img, #visions div img, #values div img {
-        width: 50px;
-        height: 50px;
-    }
-    #visions-icon, #missions-icon, #values-icon{
-        width:50px;
-        height: 50px;
-    }
-    .profile {
-        height: 50px;
-        width: 50px;
-    }
-}
 
 @media (max-width: 480px) {
     /* For smartphones */
 
     /*Menu Bar for Small Screens(smartphones)*/
     .mobile-menu {
-        background-color: #35254e;
+        background-color: darkgreen;
         position: fixed;
         top: 0;
         left: 0;
@@ -363,8 +352,29 @@ main h2 {
         color:rgb(36, 77, 190);
     }
 
+    .mobile-navigation-buttons,.mobile-navigation-buttons-single{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        background-color: inherit;
+        align-items: center;
+    }
+   .mobile-navigation-buttons-single a{
+    margin-right: 1.5%;
+   }
+
+    .default-hide a img{
+        width: 20px;
+        height: 20px;
+        margin: 5%;
+        position: relative;
+    }
+
     body {
         font-size: 12px;
+    }
+    main{
+        margin-top: 80px;
     }
     .section {
         margin: 5px;
@@ -377,7 +387,7 @@ main h2 {
     }
 
     .clickable-bar p {
-        font-size: 14px;
+        font-size: 12px;
     }
     #visions-icon, #missions-icon, #values-icon{
         width:30px;
@@ -398,5 +408,31 @@ main h2 {
         width: 30px;
     }
 
+    .work-header img, .schools img{
+        width:25px;
+        height: 25px;;
+    }
+
+    .technical-skills,.tools{
+        flex-direction: column;
+        gap:5px; /*Adds spacing between the items*/
+        padding: 5px;
+        background-color: inherit;
+    
+    }
+    
+    .technical-skills div, .tools div{
+        padding: 20px;
+
+    }
+    
+    .technical-skills div img, .tools div img, .project-icon{
+        width : 40px;
+        height: 40px;;
+    }
+
+    .work-header img,.schools img{
+        display: none;
+    }
 }
 
